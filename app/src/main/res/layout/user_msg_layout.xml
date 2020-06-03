@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+    <LinearLayout
+        android:id="@+id/userMsgLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/user_bg_bubble"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/chatMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user sent a message"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/chatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 PM"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="10sp"
+            android:layout_gravity="bottom|end"/>
+
+    </LinearLayout>
+</FrameLayout>
